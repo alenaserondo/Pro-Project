@@ -5,7 +5,7 @@ Screen currentScreen;   // decides which screen is being shown
 boolean start = false;
 //boolean stop = false;
 float count = 0.00;
-
+// hihi
 void setup()
 {
   size(500, 400);
@@ -242,3 +242,4 @@ class Counter extends Widget
     return false;
   }
 }
+
