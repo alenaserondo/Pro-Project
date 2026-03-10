@@ -16,7 +16,7 @@ class Flights
   int status;
   boolean cancelled;
  
-  Flights(String airline, int status, String date, int depTime, int arrTime, int schDepTime, boolean cancelled)
+  Flights(String airline, int status, String date, int depTime, int arrTime, int schDepTime)
   {
     this.status = status;
     this.date = date;
@@ -25,10 +25,12 @@ class Flights
     this.depTime = depTime;
     this.airline = airline;
     this.arrTime = arrTime;
-    this.cancelled = cancelled;
   }
   
-  
+  if (status == 1)
+  {
+    cancelled = true;
+  }
 }
 
  //Delayed, cancelled (colour-coded) 
