@@ -2,4 +2,4 @@
 # Alena Aine Serondo
 # Alyx Harmon
 # China Lynch
-# Liam MdManus
+# Liam McManus
