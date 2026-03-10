@@ -12,28 +12,56 @@ class Flights
   String airline;
   int schDepTime;
   int depTime;
-  int arrTime;
   int status;
-  boolean cancelled;
+  color statusCol; 
+  //int arrTime;
+
  
-  Flights(String airline, int status, String date, int depTime, int arrTime, int schDepTime)
+  Flights(String airline, int status, String date, int depTime, int schDepTime)
   {
     this.status = status;
     this.date = date;
     this.depTime = depTime;
     this.schDepTime = schDepTime;
-    this.depTime = depTime;
     this.airline = airline;
-    this.arrTime = arrTime;
+    //this.arrTime = arrTime;
   }
   
-  if (status == 1)
+  boolean cancelled()
   {
-    cancelled = true;
+  if (status == 1)
+    {
+      return true;
+    } else
+    {
+      return false;
+    }
   }
+  
+  boolean late()
+  {
+    return (schDepTime == depTime);
+  }
+  
+  void drawFlights()
+  {
+    if (flights.late())
+    {
+       statusCol = color(#FFA30D); // orange
+    }
+    
+    if (flights.cancelled())
+    {
+      statusCol = color(#FF0D0D); // red
+    }
+    
+    fill(statusCol);
+  }
+  
+  
 }
 
- //Delayed, cancelled (colour-coded) 
+//Delayed, cancelled (colour-coded) 
 //Airport, airline, dates 
 // go through and find flights between dates - section dates 
 
