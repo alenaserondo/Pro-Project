@@ -8,9 +8,9 @@ class Airport
   Airport(String code, String city, String state, int wac)
   {
     setCode(code);
-    this.city = city;
+    setCity(city);
     setState(state);
-    this.wac = wac;
+    setWac(wac);
   }
   
   
@@ -22,9 +22,9 @@ class Airport
     }
     
   }
-  void setCity()
+  void setCity(city)
   {
-  
+    this.city = city
   }
   
   void setState(String state)
@@ -43,3 +43,4 @@ class Airport
     }
   }
 }
+
