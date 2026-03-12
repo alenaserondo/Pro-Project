@@ -18,7 +18,11 @@ class Airport
   
   void setCode(String code)
   {
-    if(code.length() == 3)
+    if(code == null)
+    {
+      this.code = "UNK";
+    }
+    else if(code.length() == 3)
     {
       this.code = code;  
     }
@@ -69,6 +73,7 @@ class Airport
     }
   }
 }
+
 
 
 
