@@ -1,4 +1,4 @@
-class AirlineNames {
+class Airline {
   
   
     private String flightNum;
@@ -24,3 +24,4 @@ class AirlineNames {
 
 
 }
+
