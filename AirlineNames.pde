@@ -1,6 +1,7 @@
 class Airline {
   
-  
+  // Alena Serondo - Airline class 
+
     private String flightNum;
     private String carrierCode;
     
@@ -24,4 +25,5 @@ class Airline {
 
 
 }
+
 
