@@ -117,6 +117,25 @@ void draw()
  
  //Screens - Alyx Harmon
   currentScreen.draw();
+
+int x = 100;
+  int y = 200;
+  text("flight data :", 50,100);
+  text("airline : ", 50, 200);
+  text("Time : ", 50, 300);
+  text("status : ", 50, 500);
+   for(Flights flight : flights) //loops through the objects 
+  {
+    // prints data to the console
+    
+    fill(0);
+    text(flight.airline , x,y);
+    text(flight.depTime, x,300);
+    text(flight.schDepTime, x,400);
+    text(flight.status, x,500);
+    x += 100;
+    
+  }
    
 }
 
@@ -136,4 +155,5 @@ void mousePressed()
       currentScreen = screens.get(0);
   }
 }
+
 
