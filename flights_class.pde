@@ -1,5 +1,5 @@
 
-// China Lynch, wrote flight class 10/3/26 2:30pm
+// Wrote flight class - China Lynch 10/3/26 2:30pm
 class Flights  
 {
   String date;
@@ -21,7 +21,7 @@ class Flights
     //this.arrTime = arrTime;
   }
   
-  // China, updated booleans to be boolean functions 10/3/26 7pm
+  // Updated booleans to be boolean functions - China Lynch 10/3/26 7pm
   boolean cancelled()
   {
   if (status == 1)
@@ -40,7 +40,7 @@ class Flights
   
   void drawFlights()
   {
-    // China, fixed colour setting loops to work with functions, 11/3/26 9pm
+    // Fixed colour setting loops to work with functions - China Lynch 11/3/26 9pm
     if (late())
     {
        statusCol = color(#FFA30D); // orange
@@ -55,3 +55,4 @@ class Flights
   }
   
 }
+
