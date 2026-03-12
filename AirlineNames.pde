@@ -5,7 +5,11 @@ class Airline {
     private String flightNum;
     private String carrierCode;
     
-
+Airline(String flightNum, String carrierCode)
+{
+this.flightNum = flightNum; 
+this.carrierCode = carrierCode; 
+}
 
   public String getFlightNum(){
     return flightNum;
@@ -25,5 +29,6 @@ class Airline {
 
 
 }
+
 
 
