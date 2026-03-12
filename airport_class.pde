@@ -32,7 +32,7 @@ class Airport
     }
     
   }
-  void setCity(city)
+  void setCity(String city)
   {
     if(city == null)
     {
@@ -40,7 +40,7 @@ class Airport
     }
     else
     {
-      this.city = city
+      this.city = city;
     }
   }
   
@@ -69,10 +69,11 @@ class Airport
     }
     else
     {
-      this.wac = -1
+      this.wac = -1;
     }
   }
 }
+
 
 
 
