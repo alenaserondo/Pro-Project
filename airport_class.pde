@@ -1,3 +1,5 @@
+// Airport Class written by Liam Mc 10/03/26
+// Improvents made to defensive code by Liam Mc 12/03/26
 class Airport
 {
   String code;
@@ -20,27 +22,52 @@ class Airport
     {
       this.code = code;  
     }
+    else
+    {
+      this.code = "UNK";
+    }
     
   }
   void setCity(city)
   {
-    this.city = city
+    if(city == null)
+    {
+      this.city = "Unknown";
+    }
+    else
+    {
+      this.city = city
+    }
   }
   
   void setState(String state)
   {
-    if(state.length() == 2)
+    if(state == null) this.state = "Unkown";
+    else if(state.length() == 2)
     {
       this.state = state;
+    }
+    else
+    { 
+      this.state = "Unknown";
     }
   }
   
   void setWac(int wac)
   {
-    if(wac < 100 && wac > 0)
+    if(wac == null)
+    {
+      this.wac = -1;
+    }
+    else if(wac < 100 && wac > 0)
     {
       this.wac = wac;
     }
+    else
+    {
+      this.wac = -1
+    }
   }
 }
+
 
