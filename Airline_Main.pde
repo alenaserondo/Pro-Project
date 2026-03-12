@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 
-
+// Alena Serondo - Drop down menu 
 
 ControlP5 cp5;
 DropdownList ddl;
@@ -47,3 +47,4 @@ void controlEvent(ControlEvent theEvent) {
     println(theEvent.getGroup().getValue() + " selected");
   }
 }
+
