@@ -59,11 +59,7 @@ class Airport
   
   void setWac(int wac)
   {
-    if(wac == null)
-    {
-      this.wac = -1;
-    }
-    else if(wac < 100 && wac > 0)
+    if(wac < 100 && wac > 0)
     {
       this.wac = wac;
     }
@@ -73,6 +69,7 @@ class Airport
     }
   }
 }
+
 
 
 
