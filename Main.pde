@@ -27,7 +27,7 @@ void setup()
     int status = row.getInt("CANCELLED");
    
     
-    Flights flight = new Flights(airline, origin,  status,  date,  depTime,  arrTime,  schDepTime); // creates an object of each flight using the data
+    Flights flight = new Flights(airline,  status,  date,  depTime, schDepTime); // creates an object of each flight using the data
     flights.add(flight); //adds the object to the arraylist
   }
   
@@ -42,7 +42,8 @@ void setup()
     Airport airports = new Airport(code, city, state, wac ); // creates an object of each airport using the data from the row
     airport.add(airports); //adds the object to the arraylist
   }
-  
+
+//more reading added 9:34am - Nora Holden 
   for(TableRow row : data.rows())
     {
       String flightNum = row.getString("MKT_CARRIER"); //uses csv header names to find the specific data
@@ -91,7 +92,7 @@ void setup()
   for(Flights flight : flights) //loops through the objects 
   {
     // prints data to the console 
-    println("flight data : " + flight.airline + " + " + flight.origin  + " + " + flight.depTime + " + " + flight.date  + " + " + flight.schDepTime + " + " + flight.arrTime+ " + " + flight.status);
+    println("flight data : " + flight.airline + " + "  + flight.depTime + " + " + flight.date  + " + " + flight.schDepTime + " + " + flight.status);
   
   }
   
@@ -135,3 +136,4 @@ void mousePressed()
       currentScreen = screens.get(0);
   }
 }
+
